@@ -4,4 +4,5 @@
 * Added a background image to next div with less opacity or linear gradient
 * Added text and button on the background image
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/67317674/216807821-9570b3bc-1c3f-4973-9e4b-c485f68eddc3.png)
+

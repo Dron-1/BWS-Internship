@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .animateBox{
+        height: 20%;
+        width:10%;
+        border: 5px solid black;
+        top:2%;
+        left:2%;
+        
+        position: absolute;     /*This is mandatory */
+        /* transform: rotate(10deg); */
+        /* animation-name: rotation;
+        animation-duration: 4s ; */
+        animation: rotation 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    /* one side slide no rotation */
+    /* @keyframes rotation{
+        from{
+            top:4%;
+            left:0
+        }
+        to{
+            left: 89%;
+            top:4%;
+        }
+    } */
+    @keyframes rotation{
+        0%{
+            left:2%;
+            top:2%;
+        }
+        10%{
+            left: 10%;
+            transform: rotate(45deg);   
+        }
+        20%{
+            left: 20%;
+            transform: rotate(90deg);
+        }
+        20%{
+            left: 30%;
+            transform: rotate(135deg);
+        }
+        40%{
+            left: 40%;
+            transform: rotate(180deg);
+        }
+        50%{
+            left: 50%;
+            transform: rotate(225deg);
+        } 
+        60%{
+            left: 60%;
+            transform: rotate(270deg);
+        }
+        70%{
+            left: 70%;
+            transform: rotate(315deg);
+        }
+        80%{
+            left: 80%;
+            transform: rotate(360deg);
+        } 
+    }
+    /* 4 sides slide no rotation */
+    /* @keyframes rotation {
+        0%{
+            top:2%;
+            left:89%;
+        }
+        25%{
+            left:89%;
+            top: 75%
+        }
+        50%{
+            top: 75%;
+            left:2%;
+        }
+        75%{
+            left:2%;
+            top:4%;
+        }
+        100%{
+            top:2%;
+            left:89%;
+        }
+    } */
+</style>
+<body>
+    <div class="animateBox">
+
+    </div>
+</body>
+</html>

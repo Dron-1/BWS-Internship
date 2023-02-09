@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+}
+body{
+    background: black;
+    height: 300vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-image{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), 
+                    rgba(0, 0, 0, 0.9)), 
+                    url("./assets/mainBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+.second-bg-image{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), 
+                        rgba(0, 0, 0, 0.5)), 
+                        url("./assets/secondBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 60px 80px 100px black;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.navbar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+}
+.flex-items{
+    margin-top: 40px;
+    padding: 5px;
+    color: white;
+    height: fit-content;
+}
+.svg-file{
+    margin-top: 30px;
+}
+.search-bar{
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+}
+.search-bar #search{
+    width:60px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.search-bar #search:focus{
+    width: 100px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.contents{
+    display: block;
+    color: white;
+    text-align: center;
+
+}
+.header,.sub-header{
+    padding-top: 20px;
+}
+.header{
+    margin-top: 10%;
+    font-size: 3.5rem;
+}
+#play-btn{
+    margin-top: 10%;
+}
+.container{
+    color: white;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.para1{
+    padding: 10px;
+    width: 54%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.para1 > .text-bold{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.para1 > .text{
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 30px;
+}
+.load{
+    color: blue;
+    margin-bottom: 30px;
+}
+.cards > .card{
+    margin: 20px;
+}
+.card > img{
+    opacity: 0.6;
+    /* box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5); */
+    opacity: 0.4;
+    border-radius: 3px;
+}
+.card > p{
+    text-align: center;
+    transform: translate(0%,-80px);
+    font-size: large;
+}
+.wide-card > p{
+    text-align: center;
+    transform: none;
+    margin: 10px;
+}
+.wide-card .date{
+    font-size: smaller;
+}
+.wide-card .title{
+    font-size: xx-large;
+}
+.wide-card .sub-title{
+    font-size: smaller;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer > *{
+    margin-top: 97vh;
+    margin-left: 15px;
+}

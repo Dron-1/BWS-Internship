@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .layout
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav{
+        flex-basis: 100%;
+        border: 2px solid gray;
+    }
+    .sidebar{
+        flex-basis: 20%;
+        border: 2px solid gray;
+    }
+    .content{
+        flex-basis: 80%;
+        border: 2px solid gray;
+    }
+    @media (max-width: 640px){
+        .sidebar{
+            flex-basis: 100%;
+        }
+    }
 
+</style>
+<body>
+    <div class="layout">
+        <div class="nav">
+            Navigation goes in here
+        </div>
+        <div class="sidebar">
+            Sidebar goes in here
+        </div>
+        <div class="content">
+            Main Contents come here
+        </div>
+    </div>
+</body>
+</html>

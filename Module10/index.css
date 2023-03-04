@@ -1,0 +1,63 @@
+.container{
+    box-sizing: border-box;
+    width: 60%;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    height: 30rem;
+    overflow-y: scroll;
+    padding:10px ;
+    flex-direction: column;
+}
+.form-container{
+    box-sizing: border-box;
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: gray;
+    border-radius: 10px;
+}
+.form-container > input[type = "text"]{
+    /* align-self: center; */
+    margin: 15px 15px 10px 15px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+#submit{
+    margin: 0px 0px 15px 15px;
+    padding: 5px;
+    width: 7rem;
+    text-align: center;
+    height: 2rem;
+    border-radius: 10px;
+}
+.loading{
+    background-image: url("./assets/spinnner.gif");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: lightgray;
+}
+.image{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.8;
+    text-align: center;
+    transform: translate(50%);
+}
+.cross{
+    display: none;
+    justify-content: right;
+    margin-left: auto;
+}
